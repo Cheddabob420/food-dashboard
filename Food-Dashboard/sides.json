@@ -1,0 +1,38 @@
+[
+  {
+    "id": "s1",
+    "name": "Vegetables",
+    "ingredients": [
+      {"item":"vegetables","qty":1,"unit":"can"}
+    ]
+  },
+  {
+    "id": "s2",
+    "name": "Mashed Potatoes",
+    "ingredients": [
+      {"item":"potatoes","qty":1,"unit":"side"}
+    ]
+  },
+  {
+    "id": "s3",
+    "name": "Mac and Cheese",
+    "ingredients": [
+      {"item":"macaroni&cheese","qty":1,"unit":"box"}
+    ]
+  },
+  {
+    "id": "s4",
+    "name": "Camp Beans",
+    "ingredients": [
+      {"item":"Camp Beans","qty":1,"unit":"can"}
+    ]
+  },
+  {
+    "id": "s5",
+    "name": "Fries",
+    "ingredients": [
+      {"item":"Fries","qty":1,"unit":"bag"}
+    ]
+  }
+]
+

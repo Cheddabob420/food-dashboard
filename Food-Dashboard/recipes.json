@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+     "name": "Spaghetti",
+    "ingredients": [
+      {"item":"spaghetti","qty":1,"unit":"pack"},
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"ragu","qty":1,"unit":"jar"}
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Chicken Stir Fry",
+    "ingredients": [
+      {"item":"chicken breast","qty":1,"unit":"lb"},
+      {"item":"mixed vegetables","qty":1,"unit":"pack"},
+      {"item":"rice","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Chicken Catchatori",
+    "ingredients": [
+      {"item":"chicken breast","qty":1,"unit":"lb"},
+      {"item":"ragu","qty":1,"unit":"jar"},
+      {"item":"cheddar cheese","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Beef Taco's",
+    "ingredients": [
+      {"item":"taco shells","qty":1,"unit":"pack"},
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"taco seasoning","qty":1,"unit":"pack"},
+      {"item":"cheddar","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Salmon Patty's",
+    "ingredients": [
+      {"item":"can salmon","qty":2,"unit":"can"},
+      {"item":"saltine crackers","qty":1,"unit":"box"},
+      {"item":"choose side","qty":1,"unit":"choice"}
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Grilled Cheese Sandwich",
+    "ingredients": [
+    {"item":"bread","qty":1,"unit":"loaf"},
+    {"item":"slice cheese","qty":1,"unit":"bag"}
+    {"item":"chicken noodle soup","qty":1,"unit":"can"}
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Loaded Chicken Potato",
+    "ingredients": [
+    {"item":"bacon","qty":1,"unit":"pack"},
+    {"item":"chicken","qty":1,"unit":"lb"},
+    {"item":"potato","qty":1,"unit":"bag"}
+    ]
+  }
+]

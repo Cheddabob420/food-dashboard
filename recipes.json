@@ -1,0 +1,193 @@
+[
+  {
+    "id": "1",
+     "name": "Spaghetti",
+    "ingredients": [
+      {"item":"spaghetti","qty":1,"unit":"pack"},
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"ragu","qty":1,"unit":"jar"}
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Chicken Stir Fry",
+    "ingredients": [
+      {"item":"chicken breast","qty":1,"unit":"lb"},
+      {"item":"mixed vegetables","qty":1,"unit":"pack"},
+      {"item":"rice","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Chicken Catchatori",
+    "ingredients": [
+      {"item":"chicken breast","qty":1,"unit":"lb"},
+      {"item":"ragu","qty":1,"unit":"jar"},
+      {"item":"cheddar cheese","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Beef Taco's",
+    "ingredients": [
+      {"item":"taco shells","qty":1,"unit":"pack"},
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"taco seasoning","qty":1,"unit":"pack"},
+      {"item":"cheddar","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Salmon Patty's",
+    "ingredients": [
+      {"item":"can salmon","qty":2,"unit":"can"},
+      {"item":"saltine crackers","qty":1,"unit":"box"},
+      {"item":"choose side","qty":1,"unit":"choice"}
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Grilled Cheese Sandwich",
+    "ingredients": [
+    {"item":"bread","qty":1,"unit":"loaf"},
+    {"item":"slice cheese","qty":1,"unit":"bag"},
+    {"item":"chicken noodle soup","qty":1,"unit":"can"}
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Loaded Chicken Potato",
+    "ingredients": [
+    {"item":"bacon","qty":1,"unit":"pack"},
+    {"item":"chicken","qty":1,"unit":"lb"},
+    {"item":"potato","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Smashburgers",
+    "ingredients":[
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"brown gravy","qty":0.5,"unit":"pack"},
+      {"item":"beef stew seasoning","qty":1,"unit":"pack"},
+      {"item":"cheddar cheese","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Chilli",
+    "ingredients":[
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"can beans","qty":1,"unit":"can"},
+      {"item":"ingredent","qty":1,"unit":"pack"}
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Chicken Gravy w/ Mashed Potatos",
+    "ingredients":[
+      {"item":"chicken breast","qty":1,"unit":"pack"},
+      {"item":"potato","qty":1,"unit":"bag"},
+      {"item":"chicken gravy","qty":2,"unit":"pack"},
+      {"item":"cream chicken","qty":1,"unit":"can"}
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Hamburgers",
+    "ingredients":[
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"hamburger buns","qty":1,"unit":"pack"},
+      {"item":"choose side","qty":1,"unit":"choose"}
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Mississippi Pot Roast",
+    "ingredients":[
+      {"item":"chuck roast","qty":1,"unit":"chuckroast"},
+      {"item":"peperccins","qty":1,"unit":"jar"},
+      {"item":"potato","qty":1,"unit":"bag"}
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Dirty Rice",
+    "ingredients":[
+      {"item":"box of dirty rice","qty":1,"unit":"box"},
+      {"item":"ground beef","qty":1,"unit":"lb"}
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Jambalaya",
+    "ingredients":[
+      {"item":"sausage","qty":1,"unit":"pack"},
+      {"item":"jambalaya box","qty":1,"unit":"box"}
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Meatloaf",
+    "ingredients":[
+      {"item":"ground beef","qty":1,"unit":"lb"},
+      {"item":"egg","qty":2,"unit":"egg"},
+      {"item":"breadcrums","qty":1,"unit":"can"},
+      {"item":"choose side","qty":1,"unit":"choice"}
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Chicken and Dumplings",
+    "ingredients":[
+      {"item":"chicken breast","qty":1,"unit":"lb"},
+      {"item":"biscuts","qty":1,"unit":"can"},
+      {"item":"chicken cubes","qty":5,"unit":"cube"}
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Chicken Taco's",
+    "ingredients":[
+      {"item":"chicken breast","qty":1,"unit":"lb"},
+      {"item":"taco shells","qty":1,"unit":"pack"},
+      {"item":"chicken taco seasoning","qty":1,"unit":"pack"}
+    ]
+  },
+  {
+    "id": "18",
+    "name": "BBQ Baskets",
+    "ingredients":[
+      {"item":"pulled pork","qty":1,"unit":"lb"},
+      {"item":"biscuts","qty":1,"unit":"can"},
+      {"item":"bbq sauce","qty":1,"unit":"bottle"}
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Hot Dogs",
+    "ingredients":[
+      {"item":"hot dogs","qty":1,"unit":"pack"},
+      {"item":"hot dog buns","qty":1,"unit":"pack"},
+      {"item":"choose side","qty":1,"unit":"choose"}
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Pork Chops",
+    "ingredients":[
+      {"item":"pork chops","qty":1,"unit":"pack"},
+      {"item":"choose side","qty":1,"unit":"choose"},
+      {"item":"choose side","qty":1,"unit":"choose"}
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Porklion",
+    "ingredients":[
+      {"item":"porkloin","qty":1,"unit":"pack"},
+      {"item":"choose side","qty":1,"unit":"choose"},
+      {"item":"choose side","qty":1,"unit":"choose"}
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weekly Dinner Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Weekly Dinner Planner</h1>
+    <nav>
+      <button class="tab-btn" data-tab="recipes">Recipes</button>
+      <button class="tab-btn" data-tab="planner">Planner</button>
+      <button class="tab-btn" data-tab="shopping">Shopping List</button>
+      <button class="tab-btn" data-tab="manage">Manage Recipes</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="recipes" class="tab">
+      <h2>Recipes</h2>
+      <div id="recipes-list" class="card-grid"></div>
+    </section>
+
+    <section id="planner" class="tab" hidden>
+      <h2>Your Planner</h2>
+      <p>Select dinners for the week. Click a recipe to add it.</p>
+      <ul id="planner-list" class="stack"></ul>
+      <div class="actions">
+        <button id="clear-planner">Clear Planner</button>
+      </div>
+    </section>
+
+    <section id="shopping" class="tab" hidden>
+      <h2>Shopping List</h2>
+      <p id="shopping-info">Aggregated ingredients for selected dinners.</p>
+      <ul id="shopping-list" class="stack"></ul>
+      <div class="actions">
+        <button id="copy-link">Copy Share Link</button>
+        <button id="print-list">Print</button>
+      </div>
+    </section>
+
+    <section id="manage" class="tab" hidden>
+      <h2>Manage Recipes</h2>
+      <p>Edit existing recipes or create new ones. Changes persist in your browser (localStorage). Use export/import to move edits between devices.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Recipes</h3>
+          <ul id="manage-list" class="stack"></ul>
+          <div class="actions">
+            <button id="new-recipe">New Recipe</button>
+            <button id="export-recipes">Export</button>
+            <button id="import-recipes">Import</button>
+            <input type="file" id="import-file" accept="application/json" style="display:none" />
+          </div>
+        </div>
+
+        <div class="card" id="manage-editor">
+          <h3 id="editor-title">New Recipe</h3>
+          <label>Recipe name<br><input id="editor-name" placeholder="Name"></label>
+          <h4>Ingredients</h4>
+          <div id="ingredients-editor" class="stack"></div>
+          <button id="add-ingredient">Add Ingredient</button>
+          <h4>Sides (optional)</h4>
+          <div id="sides-checkboxes"></div>
+          <div class="actions">
+            <button id="save-recipe">Save</button>
+            <button id="cancel-edit">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template id="recipe-card">
+    <article class="card">
+      <h3 class="recipe-name"></h3>
+      <div class="meta"></div>
+      <button class="add-btn">Add to Planner</button>
+      <details>
+        <summary>Ingredients</summary>
+        <ul class="ingredients"></ul>
+      </details>
+    </article>
+  </template>
+
+  <!-- Side selection modal -->
+  <div id="side-modal" class="modal" hidden>
+    <div class="modal-content card">
+      <h3>Choose a side for <span id="modal-recipe-name"></span></h3>
+      <ul id="side-options" class="stack"></ul>
+      <div class="actions">
+        <button id="modal-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
