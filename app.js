@@ -63,19 +63,60 @@ function chooseSideOrAdd(recipe){
   const list = $('#side-options');
   list.innerHTML = '';
   $('#modal-recipe-name').textContent = recipe.name;
+
+  // determine how many "choose side" tokens the recipe contains
+  const chooseCount = Array.isArray(recipe.ingredients) ? recipe.ingredients.reduce((c,i)=>{
+    const isChoose = (typeof i.item === 'string' && i.item.toLowerCase().includes('choose side')) || (typeof i.unit === 'string' && i.unit.toLowerCase()==='choice');
+    return c + (isChoose ? 1 : 0);
+  },0) : 0;
+
+  if(chooseCount <= 1){
+    // single choice: render as buttons (existing behaviour)
+    availableSideIds.forEach(sid=>{
+      const side = state.sides.find(x=>x.id===sid);
+      if(!side) return;
+      const li = document.createElement('li');
+      const btn = document.createElement('button');
+      btn.textContent = side.name;
+      btn.addEventListener('click', ()=>{
+        addToPlanner(recipe.id, side.id);
+        closeModal(); renderPlanner(); renderShopping();
+      });
+      li.appendChild(btn);
+      list.appendChild(li);
+    });
+    modal.hidden = false;
+    return;
+  }
+
+  // multiple choices: render checkboxes and an Add Selected button
   availableSideIds.forEach(sid=>{
     const side = state.sides.find(x=>x.id===sid);
     if(!side) return;
     const li = document.createElement('li');
-    const btn = document.createElement('button');
-    btn.textContent = side.name;
-    btn.addEventListener('click', ()=>{
-      addToPlanner(recipe.id, side.id);
-      closeModal(); renderPlanner(); renderShopping();
-    });
-    li.appendChild(btn);
+    const id = `sideopt_${sid}`;
+    li.innerHTML = `<label><input type="checkbox" id="${id}" value="${sid}"> ${side.name}</label>`;
     list.appendChild(li);
   });
+
+  const actions = modal.querySelector('.actions');
+  // remove any existing add-selected button to avoid duplicates
+  const existing = modal.querySelector('#modal-add-selected');
+  if(existing) existing.remove();
+  const addBtn = document.createElement('button');
+  addBtn.id = 'modal-add-selected';
+  addBtn.textContent = `Add selected (${chooseCount} needed)`;
+  addBtn.addEventListener('click', ()=>{
+    const checked = Array.from(list.querySelectorAll('input[type=checkbox]:checked')).map(cb=>cb.value);
+    if(checked.length === 0){ alert('Please select at least one side'); return; }
+    // add an entry for each selected side
+    checked.forEach(sid => addToPlanner(recipe.id, sid));
+    // if user selected fewer than required, add empty entries for the remainder
+    const remaining = chooseCount - checked.length;
+    for(let i=0;i<remaining;i++) addToPlanner(recipe.id, null);
+    closeModal(); renderPlanner(); renderShopping();
+  });
+  actions.insertBefore(addBtn, actions.firstChild);
   modal.hidden = false;
 }
 
